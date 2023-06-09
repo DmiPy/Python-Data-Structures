@@ -1,4 +1,4 @@
-from node import Node
+from node import Node  # import Node from another file
 
 class LinkedList:
   def __init__(self, value=None):
@@ -7,8 +7,8 @@ class LinkedList:
   def get_head_node(self):
     return self.head_node
   
-  def insert_beginning(self, new_value):
-    new_node = Node(new_value)
+  def insert_beginning(self, new_value): 
+    new_node = Node(new_value) 
     new_node.set_next_node(self.head_node)
     self.head_node = new_node
     
@@ -56,14 +56,14 @@ class LinkedList:
         else:
             current_node = current_node.get_next_node()
 
-# ll = LinkedList(5)
-# ll.insert_beginning(15)
-# ll.insert_beginning(3)
-# ll.insert_beginning(8)
-# ll.insert_beginning(10)
-# ll.insert_beginning(15)
-# ll.insert_beginning(15)
-# ll.insert_beginning(15)
-# print(ll.remove_nodes(15))
-# print(ll.insert_end(55))
-# print(ll.stringify_list())
+ll = LinkedList(5)
+ll.insert_beginning(15)
+ll.insert_beginning(3)
+ll.insert_beginning(8)
+ll.insert_beginning(10)
+ll.insert_beginning(15)
+ll.insert_beginning(15)
+ll.insert_beginning(15)
+print(ll.remove_nodes(15))
+print(ll.insert_end(55))
+print(ll.stringify_list())
