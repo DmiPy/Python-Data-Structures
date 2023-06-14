@@ -46,7 +46,7 @@ pizza_stack.push("pizza #4")
 pizza_stack.push("pizza #5")
 pizza_stack.push("pizza #6")
 
-# Uncomment the push() statement below:
+# There is no room for the 7 pizza
 pizza_stack.push("pizza #7")
 
 # Delivering pizzas from the top of the stack down
@@ -58,5 +58,5 @@ pizza_stack.pop()
 pizza_stack.pop()
 pizza_stack.pop()
 
-# Uncomment the pop() statement below:
+# Nothing else to delete
 pizza_stack.pop()
