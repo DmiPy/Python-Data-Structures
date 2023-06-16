@@ -58,5 +58,5 @@ pizza_stack.pop()
 pizza_stack.pop()
 pizza_stack.pop()
 
-# Nothing else to delete
+# Nothing else to deliver
 pizza_stack.pop()
