@@ -55,7 +55,15 @@ class LinkedList:
             current_node.set_next_node(next_node.get_next_node())  # Remove the next node by skipping it
         else:
             current_node = current_node.get_next_node()  # Move to the next node
-
+  
+  def find_node(self, key):
+        current_node = self.head_node
+        while current_node:
+            if current_node.get_value() is not None and current_node.get_value()[0] == key:
+                return current_node
+            current_node = current_node.get_next_node()
+        return None
+    
 # Create an instance of the LinkedList class
 ll = LinkedList(5)
 ll.insert_beginning(15)
